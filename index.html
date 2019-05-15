@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Blog</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div id="logo">
+        <h1>A(rttu's) Blog</h1>
+      </div>
+    </header>
+    <div id="big-image">
+      <img src="image/mountain.jpg" alt="picture of mountain lake" width="100%" height="100%">
+    </div>
+      <section class="blog">
+        <article>
+          <h2>
+            <a href="">Text within text</a>
+          </h2>
+          <span>By Arttu</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congratulations on finding this phrase amidst the gibberish. Ut enim ad minim veniam, quis nostrud exercitation laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident, sunt in culpa officia deserunt mollit anim id laborum.
+          </p>
+        </article>
+        <article>
+          <h2>
+            <a href="">Title of the second blog</a>
+          </h2>
+          <span>By Arttu</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <article>
+          <h2>
+            <a href="">Title of the third blog</a>
+          </h2>
+          <span>By Arttu</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <article>
+          <h2>
+            <a href="">Title of the fourth blog</a>
+          </h2>
+          <span>By Arttu</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+      </section>
+      <section class="sidebar">
+        <div>
+          <h3>Useful Links:</h3>
+          <div>
+            <p></p>
+            <ul>
+              <li>
+                <a href="https://www.keybr.com/">Typing Practice</a>
+              </li>
+              <li>
+                <a href="https://ilovecoding.org/curriculum">iLoveCoding.org</a>
+              </li>
+            </ul>
+            <p></p>
+          </div>
+        </div>
+      </section>
+    <footer class="footer">
+      <div>&copy; A(rttu's) Blog</div>
+    </footer>
+  </div>
+
+  <style>
+
+
+  body{
+    background-color: rgb(20, 91, 138);
+    padding: 50px;
+    margin: 20px 0;
+    font-family: sans-serif;
+  }
+
+  h2, h3{
+    margin: 0;
+  }
+
+  .wrapper{
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(218, 210, 230);
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 100px 500px 1fr 100px;
+    grid-template-areas: 
+    "head head"
+    "picture picture"
+    "blog side"
+    "footer footer";
+  }
+
+  header{
+    grid-area: head;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #big-image{
+    grid-area: picture;
+    overflow: hidden;
+  }
+
+  .blog{
+    grid-area: blog;    
+  }
+
+  section{
+    padding: 30px 50px;
+  }
+
+  article{
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
+
+  article:last-child{
+    border-bottom: 0px;
+  }
+
+  .sidebar{
+    grid-area: side;
+    padding: 50px;
+  }
+
+  footer{
+    grid-area: footer;
+    text-align: center;
+    border-top: 1px solid gray;
+    padding: 40px;
+  }
+
+
+  </style>
+</body>
+</html>
